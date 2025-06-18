@@ -1,13 +1,73 @@
-body { background-color: #f5f1e8;
-color: #8c7a6b;
-font-family: 'Montserrat', sans-serif;
-font-weight: 400px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1 {
+body { 
   background-color: #c2b8a3;
-  color: #5a5046;
-  /* font-family: 'Cormorant Garamond', serif; */
-  font-family: 'Pinyon Script',cursive;
-
+  color: #5a5046;;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400px;
 }
-h5 {font-family: 'Pinyon Script',cursive;}
+.logo {
+  width: 300px;
+  height: 300px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 40px; */
+  height: 150vh;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  /* padding: 2rem; */
+}
+
+.left-side h1 {
+  color: #5a5046;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  /* margin-bottom: 1rem; */
+}
+
+.left-side h4 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.right-side {
+  flex: 1;
+  background: #f5f1e8;
+  color: #5a5046;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.home-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-menu button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-menu button:hover {
+  background-color: #c2b8a3;
+}

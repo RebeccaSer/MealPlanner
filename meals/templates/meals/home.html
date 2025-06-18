@@ -8,20 +8,20 @@
     </head>
     <body>
         <main class="container">
-            <section class="left side">
-                <img src="{% static 'meals/images/MMD Logo.png' %}" alt="Logo" class="logo">
+            <section class="left-side">
+                <img src="{% static 'meals/pictures/MMD_Logo.png' %}" alt="Logo" class="logo">
                 <h1>Mokone Meal Diaries</h1>
                 <h4>From My Kitchen To Yours: Real Recipes, Real Love</h4>
             </section>
-            <section class="right side">
-                <nav class="home menu">
-                    <button>Meal Prep</button>
-                    <button>Grocery list</button>
-                    <button>Quick Meal Ideas</button>
-                    <button>Bakes</button>
-                    <button>Lunch/Dinner</button>
-                    <button>Desserts</button>
-                    <button>About Us</button>
+            <section class="right-side">
+                <nav class="home-menu">
+                    <button onclick="location.href='{% url 'prep' %}'">Meal Prep</button>
+                    <button onclick="location.href='{% url 'grocery' %}'">Grocery list</button>
+                    <button onclick="location.href='{% url 'quick' %}'">Quick Meal Ideas</button>
+                    <button onclick="location.href='{% url 'bakes' %}'">Bakes</button>
+                    <button onclick="location.href='{% url 'lunch' %}'">Lunch/Dinner</button>
+                    <button onclick="location.href='{% url 'desserts' %}'">Desserts</button>
+                    <button onclick="location.href='{% url 'about' %}'">About Us</button>
                 </nav>
             </section>
         </main>
