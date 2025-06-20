@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 40px; */
+  padding: 40px;
   height: 150vh;
 }
 .left-side {
@@ -26,15 +26,15 @@ body {
   align-items: center;
   text-align: center;
   flex: 1;
-  /* padding: 2rem; */
+  padding: 2rem;
 }
 
-.left-side h1 {
+h1 {
   color: #5a5046;
   font-family: 'Pinyon Script', cursive;
   font-size: 5rem;
   font-weight: 400;
-  /* margin-bottom: 1rem; */
+  margin-bottom: 5px;
 }
 
 .left-side h4 {
@@ -64,10 +64,61 @@ body {
   border: 1px solid #ccc;
   padding: 0.8rem;
   font-size: 1rem;
-  cursor: pointer;
+  cursor: grab;
   transition: all 0.3s ease;
 }
 
 .home-menu button:hover {
+  background-color: #c2b8a3;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  padding: 2rem;
+}
+
+.recipe_categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+}
+
+.tabs {
+    background-color: #f5f1e8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.tabs img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 1rem;
+    color: #5a5046;
+    font-family: 'Pinyon Script', cursive;
+}
+.tabs button {
+  background: none;
+  border: 0px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabs button:hover {
   background-color: #c2b8a3;
 }

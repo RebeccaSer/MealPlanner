@@ -24,3 +24,24 @@ def desserts(request):
 
 def about_us(request):
     return render(request, 'meals/about.html')
+
+def cakes(request):
+    return render(request, 'meals/cakes.html')
+
+def cookies(request):
+    return render(request, 'meals/cookies.html')
+
+def scones(request):
+    return render(request, 'meals/scones.html')
+
+def donuts(request):
+    return render(request, 'meals/donuts.html')
+
+def muffins(request):
+    return render(request, 'meals/muffins.html')
+
+def rolls(request):
+    return render(request, 'meals/rolls.html')
+
+def breads(request):
+    return render(request, 'meals/breads.html')

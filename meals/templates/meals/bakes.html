@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="{% static 'meals/home.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> -->
+        <title>MMD Bakes</title>
+    </head>
+    <body>
+        <section class="top">
+        <img src="{% static 'meals/pictures/MMD_Logo.png' %}" alt="Logo" class="logo">
+        <h1>
+            All Things Baked: Loaves, Cookies, Cakes & more
+        </h1>
+        </section>
+        <div class="recipe_categories">
+            <div class="tabs">
+                <img src="{% static 'meals/pictures/MMD_Logo.png' %}" alt="Cakes & Brownies">
+                <button onclick="location.href='{% url 'cakes' %}'">Cakes & Brownies</button>
+            </div>
+
+            <div class="tabs">
+                <img src="{% static 'meals/pictures/MMD_Logo.png' %}" alt="Cookies">
+                <button onclick="location.href='{% url 'cookies' %}'">Cookies</button>
+            </div>
+
+            <div class="tabs">
+                <img src="{% static 'meals/pictures/MMD_Logo.png' %}" alt="Scones">
+                <button onclick="location.href='{% url 'scones' %}'">Scones</button>
+            </div>
+
+            <div class="tabs">
+                <img src="{% static 'meals/pictures/MMD_Logo.png' %}" alt="Donuts">
+                <button onclick="location.href='{% url 'donuts' %}'">Donuts</button>
+            </div>
+
+            <div class="tabs">
+                <img src="{% static 'meals/pictures/MMD_Logo.png' %}" alt="Muffins">
+                <button onclick="location.href='{% url 'muffins' %}'">Muffins</button>
+            </div>
+
+            <div class="tabs">
+                <img src="{% static 'meals/pictures/MMD_Logo.png' %}" alt="Rolls & Swirls">
+                <button onclick="location.href='{% url 'rolls' %}'">Rolls</button>
+            </div>
+
+            <div class="tabs">
+                <img src="{% static 'meals/pictures/MMD_Logo.png' %}" alt="Breads & Loaves">
+                <button onclick="location.href='{% url 'breads' %}'">Breads & Loaves</button>
+            </div>
+        </div>
+    </body>
+
+</html>
